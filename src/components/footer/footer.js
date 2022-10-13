@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="form">
-          <form action="">
+          <form action="get">
             <div>
               <label htmlFor="email"></label>
             <input type="email" name="email" id="email" />
