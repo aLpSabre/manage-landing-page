@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.24a82ffb.css",
-    "main.js": "/static/js/main.ae14ae9e.js",
-    "static/media/avatar-ali.png": "/static/media/avatar-ali.88f9155cb730934f4d7c.png",
-    "static/media/avatar-shanai.png": "/static/media/avatar-shanai.4bbe2f95e8975736fbd8.png",
-    "static/media/illustration-intro.svg": "/static/media/illustration-intro.cb9a8a9551ca99f99a125230d38a2c36.svg",
-    "static/media/avatar-anisha.png": "/static/media/avatar-anisha.484e15bc92ce6a0106ab.png",
-    "static/media/avatar-richard.png": "/static/media/avatar-richard.ace8e0892f67a50c1e9e.png",
-    "static/media/logo.svg": "/static/media/logo.66a576108be35c08eb2ca3e40c17d151.svg",
-    "static/media/logo1.svg": "/static/media/logo1.ed205f7600235cdcd7682c5c30232418.svg",
-    "index.html": "/index.html",
-    "static/media/icon-close.svg": "/static/media/icon-close.d5ba0dc53461cfc81979638f3b9fcf2e.svg",
-    "static/media/bg-tablet-pattern.svg": "/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e.svg",
-    "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.8dcf47cc6f3180ad040f1173f3592504.svg",
-    "main.24a82ffb.css.map": "/static/css/main.24a82ffb.css.map",
-    "main.ae14ae9e.js.map": "/static/js/main.ae14ae9e.js.map"
+    "main.css": "/manage-landing-page/static/css/main.f4e8e615.css",
+    "main.js": "/manage-landing-page/static/js/main.f0efb814.js",
+    "static/media/avatar-ali.png": "/manage-landing-page/static/media/avatar-ali.88f9155cb730934f4d7c.png",
+    "static/media/avatar-shanai.png": "/manage-landing-page/static/media/avatar-shanai.4bbe2f95e8975736fbd8.png",
+    "static/media/illustration-intro.svg": "/manage-landing-page/static/media/illustration-intro.cb9a8a9551ca99f99a125230d38a2c36.svg",
+    "static/media/avatar-anisha.png": "/manage-landing-page/static/media/avatar-anisha.484e15bc92ce6a0106ab.png",
+    "static/media/avatar-richard.png": "/manage-landing-page/static/media/avatar-richard.ace8e0892f67a50c1e9e.png",
+    "static/media/logo.svg": "/manage-landing-page/static/media/logo.66a576108be35c08eb2ca3e40c17d151.svg",
+    "static/media/logo1.svg": "/manage-landing-page/static/media/logo1.ed205f7600235cdcd7682c5c30232418.svg",
+    "index.html": "/manage-landing-page/index.html",
+    "static/media/icon-close.svg": "/manage-landing-page/static/media/icon-close.d5ba0dc53461cfc81979638f3b9fcf2e.svg",
+    "static/media/bg-tablet-pattern.svg": "/manage-landing-page/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e.svg",
+    "static/media/icon-hamburger.svg": "/manage-landing-page/static/media/icon-hamburger.8dcf47cc6f3180ad040f1173f3592504.svg",
+    "main.f4e8e615.css.map": "/manage-landing-page/static/css/main.f4e8e615.css.map",
+    "main.f0efb814.js.map": "/manage-landing-page/static/js/main.f0efb814.js.map"
   },
   "entrypoints": [
-    "static/css/main.24a82ffb.css",
-    "static/js/main.ae14ae9e.js"
+    "static/css/main.f4e8e615.css",
+    "static/js/main.f0efb814.js"
   ]
 }
