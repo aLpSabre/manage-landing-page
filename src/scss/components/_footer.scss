@@ -1,0 +1,178 @@
+@import "../abstract/_colors.scss";
+@import "../abstract/_mixins.scss";
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: $veryDarkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $veryLightGray;
+  .content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .manage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 20%;
+      height: 20vh;
+      .logos {
+        width: 75%;
+      }
+      .logos ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+
+        li {
+          :hover {
+            color: $brightRed;
+          }
+          a {
+            text-decoration: none;
+            color: $veryLightGray;
+          }
+        }
+      }
+    }
+    .links {
+      width: 30%;
+      height: 20vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      ul {
+        list-style: none;
+
+        li {
+          padding-bottom: 1.3rem;
+          :hover {
+            color: $brightRed;
+          }
+          a {
+            text-decoration: none;
+            color: $veryLightGray;
+          }
+        }
+      }
+    }
+    .form {
+      min-width: 30%;
+      min-height: 20vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        div {
+          input {
+            border: $brightRed 1px solid;
+            width: 200px;
+            height: 6vh;
+            border-radius: 15px;
+            padding: 10px;
+            outline: none;
+            :active {
+              border: none;
+              outline: none;
+            }
+          }
+          p {
+            margin-top: 0.3rem;
+            font-size: small;
+            padding-left: 5px;
+            color: $brightRed;
+          }
+        }
+        .go {
+          width: 75px;
+          text-align: center;
+          border-radius: 50px;
+          background-color: $brightRed;
+          color: white;
+          padding: 15px;
+          border: none;
+          cursor: pointer;
+          font-weight: 600;
+        }
+      }
+      p {
+        font-size: small;
+      }
+    }
+  }
+}
+@include media-lg {
+  footer {
+    position: relative;
+    height: 70vh;
+    .content {
+      flex-direction: column-reverse;
+      width: 80%;
+      .manage {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        .logos {
+          width: 50%;
+        }
+      }
+      .links {
+        width: 80%;
+      }
+    }
+
+    .form {
+      display: block;
+      height: 15vh;
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .copy {
+        font-size: small;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@include media-md {
+  footer {
+
+    .content {
+    .manage {
+      
+        width: 100%;
+        .logos {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

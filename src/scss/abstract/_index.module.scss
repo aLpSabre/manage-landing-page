@@ -1,0 +1,16 @@
+@import "../base/reset.module";
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;900&display=swap");
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover{
+  opacity: 0.5;
+}

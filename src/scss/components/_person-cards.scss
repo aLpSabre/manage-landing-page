@@ -1,0 +1,32 @@
+@import "../abstract/_colors.scss";
+@import "../abstract/_mixins.scss";
+.person-container {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 10px;
+  background-color: $veryLightGray;
+
+  p {
+    color: $darkGrayishBlue;
+    font-size: 15px;
+  }
+  .icon-container {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 4rem;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

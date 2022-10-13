@@ -1,0 +1,133 @@
+@import "../abstract/_colors.scss";
+@import "../abstract/_mixins.scss";
+
+.tablet {
+  background: url("../../images/bg-tablet-pattern.svg") no-repeat;
+  background-position: -150% -220%;
+  background-size: 80%;
+  position: absolute;
+  width: 50%;
+  height: 70vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 40vh;
+  margin-bottom: 70px;
+  gap: 1rem;
+  .wrapper {
+
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    min-height: 40vh;
+    gap: 1rem;
+    margin: auto;
+
+    .left {
+      width: 40%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      h1 {
+        font-size: 40px;
+        color: $darkBlue;
+      }
+      p {
+        color: $darkGrayishBlue;
+      }
+    }
+    .right {
+      width: 50%;
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        h4 {
+          margin-bottom: 1rem;
+          margin-top: 5px;
+        }
+        .numbers {
+          background-color: $brightRed;
+          padding: 10px 25px;
+          border-radius: 50px;
+          color: white;
+        }
+        h4 ~ p {
+          color: $darkGrayishBlue;
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  .tablet {
+    width: 100%;
+    height: 40vh;
+
+    background-size: 80%;
+    background-position: 250% 0%;
+  }
+  .container {
+    margin-top: -200px;
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 400px;
+      .left {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .right {
+        width: 100%;
+
+        .item {
+          display: block;
+          overflow: hidden;
+          padding-top: 1rem;
+          padding-left: 1rem;
+          .numbers {
+            display: inline;
+            position: relative;
+          }
+
+          h4 {
+            transform: translate(12%, -85%);
+            background-color: $veryPaleRed;
+            padding: 10px 45px;
+            border-radius: 50px;
+            z-index: -1;
+            position: relative;
+            margin-bottom: 0;
+          }
+          div {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
