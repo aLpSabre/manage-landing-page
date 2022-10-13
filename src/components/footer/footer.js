@@ -27,19 +27,19 @@ const Footer = () => {
         <div className="links">
           <div className="link-left">
             <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href=""> About Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#"> About Us</a></li>
       
             </ul>
           
           </div>
           <div className="link-right">
             <ul>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           
       
             </ul>
@@ -48,6 +48,7 @@ const Footer = () => {
           <div className="form">
           <form action="">
             <div>
+              <label htmlFor="email"></label>
             <input type="email" name="email" id="email" />
             <p>  Updates in your inbox…</p>
             </div>
