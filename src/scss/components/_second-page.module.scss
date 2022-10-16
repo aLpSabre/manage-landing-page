@@ -78,7 +78,7 @@
   }
 }
 
-@include media-md {
+@include media-lg {
   .tablet {
     width: 100%;
     height: 40vh;
@@ -115,9 +115,9 @@
           }
 
           h4 {
-            transform: translate(12%, -85%);
+            transform: translate(5%, -85%);
             background-color: $veryPaleRed;
-            padding: 10px 45px;
+            padding: 10px 60px;
             border-radius: 50px;
             z-index: -1;
             position: relative;

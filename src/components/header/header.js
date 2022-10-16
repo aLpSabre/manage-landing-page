@@ -11,20 +11,22 @@ const Header = () => {
     setOpenMenu(!openMenu);
   };
 
-  const lg="lg-toggle";
-  const md="md-toggle";
+  const lg = "lg-toggle";
+  const md = "md-toggle";
 
   return (
     <header>
       <nav>
         <div className="nav-md">
           <img src={logo} alt="logo" />
-          <img src={openMenu ? (close) : (hamburger)} alt="hamburger" className="hamburger" id="hamburger-btn" onClick={toggleMenu} /
-          >
+          {!openMenu && <img src={ (hamburger)} alt="hamburger" className="hamburger" id="hamburger-btn" onClick={toggleMenu} />}
+
+          {openMenu &&
+          <img src={(close)} alt="close" className="hamburger show-box" id="close-btn" onClick={toggleMenu}/>}
 
         </div>
         <div className="unordered">
-    	    <div className={openMenu ? ("overlay") : (null)}></div>
+          <div className={openMenu ? ("overlay") : (null)}></div>
           <ul className={openMenu ? (md) : (lg)}>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#product">Product</a></li>
@@ -33,7 +35,7 @@ const Header = () => {
             <li><a href="#community">Community</a></li>
           </ul>
         </div>
-    
+
 
         <div>
           <button className="get-started-btn">Get Started</button>

@@ -2,7 +2,7 @@
 @import "../abstract/_mixins.scss";
 .person-container {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,5 +28,11 @@
     img {
       width: 100%;
     }
+  }
+}
+@include media-lg {
+  .person-container {
+
+    height: 30vh;
   }
 }

@@ -1,93 +1,82 @@
 @import "../abstract/_colors.scss";
 @import "../abstract/_mixins.scss";
-header{
-min-width:100%;
-padding: 1.5rem;
-margin-bottom: 10px;
-nav{
-  display: flex;
-  width: 80%;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-
-  padding:  1rem 0;
-  img{
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    cursor: pointer;
-
-  }
-  .unordered{
-    width: 100%;
-    position: relative;
-  }
-  .hamburger{
-    display: none;
-  
-  }
-  .lg-toggle{
+header {
+  min-width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 10px;
+  nav {
     display: flex;
-    justify-content: space-evenly;
+    width: 80%;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    gap: 2rem;
-    li{
-      :hover{
-        color: $darkGrayishBlue;
-      }
-      a{
-        text-decoration: none;
-        color: $veryDarkBlue;
-        font-weight: 500;
+    margin: auto;
+
+    padding: 1rem 0;
+    img {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .unordered {
+      width: 100%;
+      position: relative;
+    }
+    .hamburger {
+      display: none;
+    }
+    .lg-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 2rem;
+      li {
+        :hover {
+          color: $darkGrayishBlue;
+        }
+        a {
+          text-decoration: none;
+          color: $veryDarkBlue;
+          font-weight: 500;
+        }
       }
     }
-   
+
+    .get-started-btn {
+      width: 150px;
+      border-radius: 50px;
+      background-color: $brightRed;
+      color: white;
+      padding: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
   }
-
-
-  .get-started-btn{
-    width: 150px;
-    border-radius: 50px;
-    background-color: $brightRed;
-    color: white;
-    padding: 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
 }
 
-}
-
-@include media-lg{
-  header{
-    
-    nav{
+@include media-lg {
+  header {
+    nav {
       display: block;
       width: 95%;
- 
 
-      .nav-md{
+      .nav-md {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2rem;
         position: relative;
         z-index: 999;
-  
-    
       }
-      .hamburger{
+      .hamburger {
         display: block;
-       
       }
-      .lg-toggle{
+      .lg-toggle {
         display: none;
       }
-      .md-toggle{
+      .md-toggle {
         flex-direction: column;
         text-align: center;
         background-color: white;
@@ -96,18 +85,57 @@ nav{
         gap: 2rem;
         position: absolute;
         left: 50%;
-        transform: translate(-50%,-0%);
-        width: 95%;
-        z-index:997;
+        transform: translate(-50%, -0%);
+        width: 100%;
+        z-index: 997;
         padding: 20px 0px;
-        li a{
+        animation: SHOW-BOX 1.5s ease;
+        li a {
           text-decoration: none;
           color: $veryDarkBlue;
           font-weight: 500;
-         
         }
       }
-      .overlay{
+      @-webkit-keyframes SHOW-BOX {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-moz-keyframes SHOW-BOX {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-o-keyframes SHOW-BOX {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes SHOW-BOX {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .show-box {
+        -webkit-animation: SHOW-BOX 1.5s ease;
+        -moz-animation: SHOW-BOX 1.5s ease;
+        -o-animation: SHOW-BOX 1.5s ease;
+        animation: SHOW-BOX 1.5s ease;
+      }
+      .overlay {
         position: fixed;
         display: block;
         top: 0px;
@@ -115,14 +143,13 @@ nav{
         right: 0px;
         bottom: 0px;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-        z-index:995;
-      
+        z-index: 995;
+        animation: SHOW-BOX 1.5s ease;
       }
 
-      .get-started-btn{
-       display: none;
+      .get-started-btn {
+        display: none;
       }
     }
   }
-  
 }

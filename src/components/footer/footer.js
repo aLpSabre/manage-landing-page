@@ -16,11 +16,11 @@ const Footer = () => {
 
             <ul>
 
-              <li><a href=""><FaFacebookSquare size = 'auto' /></a></li>
-              <li><a href=""><FaYoutube  size = 'auto' /></a></li>
-              <li><a href=""><FaTwitter  size = 'auto' /></a></li>
-              <li><a href=""><FaPinterest  size = 'auto'/></a></li>
-              <li><a href=""><FaInstagram  size = 'auto'/></a></li>
+              <li><a href=""><FaFacebookSquare size = '45'  /></a></li>
+              <li><a href=""><FaYoutube  size = '45'  /></a></li>
+              <li><a href=""><FaTwitter  size = '45'  /></a></li>
+              <li><a href=""><FaPinterest  size = '45' /></a></li>
+              <li><a href=""><FaInstagram  size = '45' /></a></li>
             </ul>
           </div>
         </div>
