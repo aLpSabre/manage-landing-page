@@ -113,6 +113,6 @@ export default () => {
 
 ## Author
 
-- Frontend Mentor - [alpbrace](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [alpbrace](https://www.frontendmentor.io/profile/alpbrace)
 
 
