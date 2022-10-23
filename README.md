@@ -32,11 +32,11 @@ Users should be able to:
 
 💻-Desktop-view
 <br/>
-![Desktop-view]("./gifs/desktop.gif")
+![Desktop-view](./gifs/desktop.gif)
 <br/>
 📱-Mobile-view
 <br/>
-![Mobile-view]("./gifs/mobile.gif")
+![Mobile-view](./gifs/mobile.gif)
 
 
 ### Links
