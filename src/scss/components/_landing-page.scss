@@ -2,10 +2,10 @@
 @import "../abstract/_mixins.scss";
 .tablet {
   background: url("../../images/bg-tablet-pattern.svg") no-repeat;
-  background-position: 190% 200%;
-  background-size: 92%;
+  background-position:30px -80px;
+  background-size: 100%;
   position: absolute;
-  width: 50%;
+  width: 700px;
   height: 80vh;
   top: 0;
   right: 0;
@@ -51,10 +51,7 @@
   }
 }
 @include media-lg {
-  .tablet {
-    width: 100%;
-    height: 40vh;
-  }
+
   .container {
     flex-direction: column-reverse;
     width: 95%;
@@ -70,12 +67,28 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 1600px) {
   .container {
     gap: 1.5rem;
 
     .left {
       width: 40%;
     }
+  }
+}
+@media (min-width:601px) and (max-width: 1245px) {
+  .tablet{
+ 
+  
+    width: 600px;
+    height: 80vh;
+  }
+}
+@media   (max-width: 600px) {
+  .tablet{
+
+    background-position: 60px -20px;
+    width: 450px;
+    height: 80vh;
   }
 }

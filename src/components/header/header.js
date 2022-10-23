@@ -28,8 +28,8 @@ const Header = () => {
         <div className="unordered">
           <div className={openMenu ? ("overlay") : (null)}></div>
           <ul className={openMenu ? (md) : (lg)}>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#product">Product</a></li>
+            <li><a href="#home">Pricing</a></li>
+            <li><a href="#home">Product</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#careers">Careers</a></li>
             <li><a href="#community">Community</a></li>

@@ -2,7 +2,7 @@ import Styling from "../../scss/components/_second-page.module.scss"
 const SecondPage = () => {
 
   return (
-    <section className={Styling.container}>
+    <section className={Styling.container} id="about">
       <div className={Styling.tablet}></div>
       <div className={Styling.wrapper}>
 

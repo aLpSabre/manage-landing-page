@@ -17,7 +17,7 @@ import shanai from "../../images/avatar-shanai.png"
 
 export default () => {
   return (
-    <section className="swiper-section">
+    <section className="swiper-section" id="careers">
     <h1>What they’ve said</h1>
     <Swiper
       // install Swiper modules

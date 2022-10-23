@@ -8,7 +8,7 @@ const LandingPage = () => {
 
     <>
   <div className="tablet"></div>
-      <div className="container">
+      <div className="container" id="home">
     
         <div className="left">
           <h1>Bring everyone together to build better products.</h1>
