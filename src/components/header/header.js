@@ -28,11 +28,11 @@ const Header = () => {
         <div className="unordered">
           <div className={openMenu ? ("overlay") : (null)}></div>
           <ul className={openMenu ? (md) : (lg)}>
-            <li><a href="#home">Pricing</a></li>
-            <li><a href="#home">Product</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#community">Community</a></li>
+            <li><a href="#home" onClick={()=>setOpenMenu(false)}>Pricing</a></li>
+            <li><a href="#home"  onClick={()=>setOpenMenu(false)}>Product</a></li>
+            <li><a href="#about"  onClick={()=>setOpenMenu(false)}>About Us</a></li>
+            <li><a href="#careers"  onClick={()=>setOpenMenu(false)}>Careers</a></li>
+            <li><a href="#community"  onClick={()=>setOpenMenu(false)}>Community</a></li>
           </ul>
         </div>
 
