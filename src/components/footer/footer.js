@@ -57,7 +57,7 @@ setEmail("");
           <form action="get" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" style={{display:"none"}}>Email</label>
-            <input type="email" name="email" id="email" value={email} placeholder="Enter an Email..." onChange={(e)=>setEmail(e.target.value)} required />
+            <input type="email" name="email" id="email" value={email} placeholder="Enter an Email for updates..." onChange={(e)=>setEmail(e.target.value)} required />
           {submit && <p>  Updates in your inbox…</p> }  
             </div>
             <button type="submit" className="go">Go</button>
