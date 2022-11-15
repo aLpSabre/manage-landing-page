@@ -40,7 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    "minimatch": "^5.1.0"
-  }
+  "dependencies": {}
 }
